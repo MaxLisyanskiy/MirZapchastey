@@ -1,3 +1,156 @@
+/* Transitions*/
+.transitions {
+    padding-top: 53px;
+    display: flex;
+}
+.transitions__link{
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.transitions__link_active {
+    color: #ffda44;
+}
+.transitions__span {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+/* Card-Tires */
+.card-tires{
+    margin-top: 50px;
+}    
+.card-tires__img-box {
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f9f8f8;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.card-tires__title-wrapp {
+    margin: 19px 0 16px 0;
+    border-bottom: 2px solid #f6f6f6;
+}
+.card-tires__title {
+    margin-left: 19px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+}
+.card-tires__subtitle {
+    margin-left: 19px;
+    margin-bottom: 16px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-tires__img-link {
+    display: block;
+    overflow: hidden;
+}
+.card-tires__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-tires__character-title {
+    display: flex;
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px 10px 0 0;
+    background-color: #f6f6f6;
+    padding: 34px 0;
+}
+.card-tires__character-title p {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+.card-tires__character-title_dimensions {
+    margin-left: 25px;
+}
+.card-tires__character-title_price {
+    margin-left: 113px;
+}
+.card-tires__character-title_quantity {
+    margin-left: 69px;
+}
+.card-tires__character-wrapp {
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #f6f6f6;
+    background-color: #ffffff;
+}
+.card-tires__character-box {
+    padding: 0 25px;
+}
+.card-tires__characters-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    border-bottom: 2px solid #f6f6f6;
+}
+.card-tires__characters-inner_r16-top {
+    border-bottom: 0;
+}
+.card-tires__characters-inner_r16-bottom {
+    margin-top: 0;
+}
+.card-tires__character-radius {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.card-tires__character-dimensions {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+    width: 113px;
+}
+.card-tires__character-dimensions_radius-descr {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.card-tires__character-dimensions_articul {
+    color: #ffda44;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.card-tires__character-price {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+}
+.card-tires__character-btn {
+    width: 140px;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #ffda44;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+
+
 .product-cards{}
 
 .product-cards__box {
@@ -8,7 +161,10 @@
     background-color: #ffffff;
 }
 .product-cards__img{
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .product-cards__content{
     padding-top: 20px;
@@ -89,4 +245,40 @@
     font-size: 12px;
     font-weight: 700;
     text-align: right;
+}
+
+
+/* Count */
+.count {
+    display: flex;
+}
+.count__minus {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 30px;
+    height: 33px;
+    border: 1px solid #909090;
+    color: #909090;
+    font-size: 25px;
+}
+.count__number {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    padding: 7px 0;
+    width: 41px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    height: 33px;
+}
+.count__plus {
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 30px;
+    height: 33px;
+    border: 1px solid #909090;
+    color: #909090;
+    font-size: 25px;
 }

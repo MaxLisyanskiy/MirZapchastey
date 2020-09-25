@@ -12,11 +12,32 @@
 </head>
 <body>
 
+    <!--Transitions-->
+    <section class="transitions">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="transitions__box">
+                        <a class="transitions__link" href="#">Главная</a>
+                        <span class="transitions__span">/</span>
+                        <a class="transitions__link" href="#">Шины</a>
+                        <span class="transitions__span">/</span>
+                        <a class="transitions__link transitions__link_active" href="#">Зимние шины</a>
+                        <span class="transitions__span">/</span>
+                        <a class="transitions__link" href="#">Зимние нешипованные</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Transitions-->
+
+
     <!-- Product-cards -->
     <div class="product-cards">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-xl-3">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="product-cards__box">
                         <div class="product-cards__img">
                             <img src="img/1.png" alt="">
@@ -26,206 +47,203 @@
                             <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
                             <div class="product-cards__wrapper">
                                 <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count-wrapp">
-                                    <span class="product-cards__count-wrapp_minus">-</span>
-                                    <div class="product-cards__count-wrapp_number">1</div>
-                                    <span class="product-cards__count-wrapp_plus">+</span>
+                                <div class="count">
+                                    <button class="count__minus">-</button>
+                                    <div class="count__number-wrapp">
+                                        <input type="number" class="count__number" value="4" name="col" maxcol="4">
+                                    </div>
+                                    <button class="count__plus">+</button>
                                 </div>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
                         </div>
+                        <button class="product-cards__btn">В корзину</button>
+                        <div class="product-cards__presence">Есть в наличии</div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!--Card-->
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="card__box">
+                        <a href="#" class="card__img">
+                            <img src="img/1.png" alt="img">
+                        </a>
+                        <div class="icons__wrapp">
+                            <img src="icons/Snow.png" alt="snow">
+                            <img src="icons/Znak.png" alt="znak">
+                            <img src="icons/sun.png" alt="sun">
+                        </div> 
                     </div>
                 </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
+                <div class="col-lg-7">
+                    <div class="title-wrapp">
+                        <div class="title-wrapp__inner">
+                            <h1 class="card__title">Impulser b2</h1>
+                            <h2 class="card__subtitle">Артикул: 34562</h2>    
                         </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
+                        <div class="card__brand">
+                            <img src="icons/BrandLogo.png" alt="brand" class="card__brand-img">
+                        </div>
+                    </div> 
+                    <div class="card__descr">Срок поставки: 1 день</div>
+                    <div class="price__wrapp">
+                        <div class="price__num">1 760 ₽<span>/шт</span></div>
+                        <div class="count">
+                            <button class="count__minus">-</button>
+                            <div class="count__number-wrapp">
+                                <input type="number" class="count__number" value="4">
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
+                            <button class="count__plus">+</button>
                         </div>
+                        <button class="price__btn"></button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="info__wrapp">
+                                <p>Индекс нагрузки:</p>
+                                <p>Индекс скорости:</p>
+                                <p>Высота:</p>
+                                <p>Ширина:</p>
+                                <p>Диаметр:</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="info__inner">
+                                <p>70 (до 335 кг на колесо)</p>
+                                <p>T (до 190 км/ч)</p>
+                                <p>80</p>
+                                <p>135</p>
+                                <p>13</p>
+                            </div>
+                        </div>      
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Card-tires-->
+    <section class="card-tires">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="card-tires__img-box">
+                        <div class="card-tires__title-wrapp">
+                            <h2 class="card-tires__title">Winter Drive</h2>
+                            <div class="card-tires__subtitle">Производитель: <span class="card-tires__subtitle_span">Cordiant</span></div>
+                        </div>
+                        <a href="#" class="card-tires__img-link">
+                            <img src="img/Tyre.png" alt="img" class="card-tires__img">
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
+                <div class="col-xl-7">
+                    <div class="card-tires__character">
+                        <div class="card-tires__character-title">
+                            <p class="card-tires__character-title_dimensions">Размер</p>
+                            <p class="card-tires__character-title_price">Цена</p>
+                            <p class="card-tires__character-title_quantity">Количество</p>
                         </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
+                        <div class="card-tires__character-wrapp">
+                            <div class="card-tires__character-box">
+                            <div class="card-tires__character-radius">R13</div>
+                            <div class="card-tires__characters-inner">
+                                <div class="card-tires__character-dimensions">
+                                    <div class="card-tires__character-dimensions_radius-descr">175/70 R13 82T</div>
+                                    <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
+                                </div>
+                                <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                <div class="count">
+                                    <button class="count__minus">-</button>
+                                    <div class="count__number-wrapp">
+                                        <input type="number" class="count__number" value="4">
+                                    </div>
+                                    <button class="count__plus">+</button>
+                                </div>
+                                <button class="card-tires__character-btn">В корзину</button>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
+                            <div class="card-tires__character-box">
+                            <div class="card-tires__character-radius">R14</div>
+                            <div class="card-tires__characters-inner">
+                                <div class="card-tires__character-dimensions">
+                                    <div class="card-tires__character-dimensions_radius-descr">175/70 R13 84T</div>
+                                    <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
+                                </div>
+                                <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                <div class="count">
+                                    <button class="count__minus">-</button>
+                                    <div class="count__number-wrapp">
+                                        <input type="number" class="count__number" value="4">
+                                    </div>
+                                    <button class="count__plus">+</button>
+                                </div>
+                                <button class="card-tires__character-btn">В корзину</button>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
+                            <div class="card-tires__character-box">
+                                <div class="card-tires__character-radius">R15</div>
+                                <div class="card-tires__characters-inner">
+                                    <div class="card-tires__character-dimensions">
+                                        <div class="card-tires__character-dimensions_radius-descr">195/65 R1 91T</div>
+                                        <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
+                                    </div>
+                                    <div class="card-tires__character-price">2 450 <span style="font-weight: 400;">₽</span></div>
+                                    <div class="count">
+                                        <button class="count__minus">-</button>
+                                        <div class="count__number-wrapp">
+                                            <input type="number" class="count__number" value="4">
+                                        </div>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                    <button class="card-tires__character-btn">В корзину</button>
+                                </div>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
+                            <div class="card-tires__character-box">
+                                <div class="card-tires__character-radius">R16</div>
+                                <div class="card-tires__characters-inner card-tires__characters-inner_r16-top">
+                                    <div class="card-tires__character-dimensions">
+                                        <div class="card-tires__character-dimensions_radius-descr">175/70 R13 82T</div>
+                                        <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
+                                    </div>
+                                    <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                    <div class="count">
+                                        <button class="count__minus">-</button>
+                                        <div class="count__number-wrapp">
+                                            <input type="number" class="count__number" value="4">
+                                        </div>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                    <button class="card-tires__character-btn">В корзину</button>
+                                </div>
+                                <div class="card-tires__characters-inner card-tires__characters-inner_r16-bottom">
+                                    <div class="card-tires__character-dimensions">
+                                        <div class="card-tires__character-dimensions_radius-descr">175/70 R13 82T</div>
+                                        <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
+                                    </div>
+                                    <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                    <div class="count">
+                                        <button class="count__minus">-</button>
+                                        <div class="count__number-wrapp">
+                                            <input type="number" class="count__number" value="4">
+                                        </div>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                    <button class="card-tires__character-btn">В корзину</button>
+                                </div>
                             </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
-                            </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
-                            </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
-                            </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="product-cards__box">
-                        <div class="product-cards__img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="product-cards__content">
-                            <h3 class="product-cards__title">Kormoran</h3>
-                            <div class="product-cards__descr">Impulser b2 135/80 R13 T</div>
-                            <div class="product-cards__wrapper">
-                                <div class="product-cards__price">1 760 ₽</div>
-                                <div class="product-cards__count">1</div>
-                            </div>
-                            <button class="product-cards__btn">В корзину</button>
-                            <div class="product-cards__presence">Есть в наличии</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
 </body>
 </html>
