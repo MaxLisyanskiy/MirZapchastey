@@ -13,6 +13,9 @@
 .transitions__link_active {
     color: #ffda44;
 }
+.transitions__link:hover{
+    color: #f1d668;
+}
 .transitions__span {
     color: #222222;
     font-family: Montserrat;
@@ -23,7 +26,7 @@
 
 /* Card-Tires */
 .card-tires{
-    margin-top: 50px;
+    margin: 50px 0 118px 0;
 }    
 .card-tires__img-box {
     box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.06);
@@ -49,10 +52,6 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-}
-.card-tires__img-link {
-    display: block;
-    overflow: hidden;
 }
 .card-tires__img {
     display: block;
@@ -86,6 +85,7 @@
     border-radius: 0 0 10px 10px;
     border: 1px solid #f6f6f6;
     background-color: #ffffff;
+    padding-bottom: 22px;
 }
 .card-tires__character-box {
     padding: 0 25px;
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
-    border-bottom: 2px solid #f6f6f6;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
 }
 .card-tires__characters-inner_r16-top {
     border-bottom: 0;
@@ -148,11 +148,19 @@
     line-height: 25px;
     text-transform: uppercase;
 }
+.card-tires__character-btn:active{
+    background-color: #f5d659;
+}
 
 
-
-.product-cards{}
-
+/* product-cards */
+.product-cards{
+    margin: 22px 0 140px 0;
+}
+.product-cards__link {
+    display: block;
+    overflow: hidden;
+}
 .product-cards__box {
     margin: 15px 0px;
     padding: 0px 20px 10px 20px;
@@ -164,19 +172,40 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+.product-cards__img-link {
+    display: block;
+    overflow: hidden;
+}
+.product-cards__icons-wrapp{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 11px;
+}
+.product-cards__icons{
+    display: none;
+    margin-left: 11px;
+    width: 30px;
+    height: 24px;
+}
+.product-cards__icons_active{
+    display: block;
 }
 .product-cards__content{
     padding-top: 20px;
-    border-top: 1px solid #909090;
+    border-top: 1px solid rgba(0,0,0, 0.1);
 }
 .product-cards__title{
+    display: block;
     color: #000000;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 700;
     line-height: 22px;
     text-align: center;
+}
+.product-cards__title:hover{
+    color: rgba(0,0,0, 0.8);
 }
 .product-cards__descr{
     margin-top: 17px;
@@ -236,7 +265,9 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
-    text-transform: uppercase;
+}
+.product-cards__btn:active{
+    background-color: #f5d659;
 }
 .product-cards__presence{
     margin-top: 20px;
@@ -246,6 +277,135 @@
     font-weight: 700;
     text-align: right;
 }
+
+
+/* Goods-card */
+.goods-card {
+    margin: 65px 0 81px 0;
+}
+.goods-card__box {
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f9f8f8;
+    background-color: #ffffff;
+}
+.goods-card__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.goods-card__icons-wrapp {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 21px 20px 0;
+}
+.goods-card__icons {
+    display: none;
+    margin: 0px 5px;
+    width: 30px;
+}
+.goods-card__icons_active {
+    display: block;
+}
+.goods-card__title-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+.goods-card__title {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+}
+.goods-card__subtitle {
+    margin-top: 9px;
+    color: #ffda44;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+}
+.goods-card__time {
+    margin-top: 18px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+.goods-card__brand-link{
+    display: block;
+    overflow: hidden;
+}
+.goods-card__price-wrapp {
+    margin-top: 49px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+.goods-card__price-num {
+    margin-top: 3px;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+}
+.goods-card__price-span {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #878787;
+    font-size: 18px;
+}
+.goods-card__btn {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffda44;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.goods-card__btn:active {
+    background-color: #d4b32c;
+}
+.goods-card__count {
+    margin-top: 10px;
+}
+.goods-card__info {
+    margin-top: 39px;
+    display: flex;
+}
+.goods-card__info-left p {
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.goods-card__info-right {
+    margin-left: 71px;
+}
+.goods-card__info-right p {
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.goods-card__info-right p span{
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+
+
+
+
 
 
 /* Count */
@@ -261,6 +421,9 @@
     border: 1px solid #909090;
     color: #909090;
     font-size: 25px;
+}
+.count__minus:active{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .count__number {
     border-radius: 0;
@@ -281,4 +444,7 @@
     border: 1px solid #909090;
     color: #909090;
     font-size: 25px;
+}
+.count__plus:active{
+    background-color: rgba(0, 0, 0, 0.2);
 }
