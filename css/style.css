@@ -151,6 +151,71 @@
 .card-tires__character-btn:active{
     background-color: #f5d659;
 }
+.card-tires__character-btn_hidden {
+    display: none;
+}
+@media (max-width: 1200px){
+    .card-tires__character-title_price{
+        margin-left: 203px;
+    }
+    .card-tires__character-title_quantity{
+        margin-left: 170px;
+    }
+}
+@media (max-width: 991px){
+    .card-tires__character-title_price{
+        margin-left: 125px;
+    }
+    .card-tires__character-title_quantity{
+        margin-left: 90px;
+    }
+}
+@media (max-width: 767px){
+    .card-tires__img{
+        width: 200px;
+    }
+    .card-tires__character-title_price{
+        margin-left: 62px;
+    }
+    .card-tires__character-title_quantity{
+        margin-left: 35px;
+    }
+}
+@media (max-width: 576px){
+    .card-tires__character-box{
+        padding: 0px 10px;
+    }
+    .card-tires__img{
+        width: 155px;
+    }
+    .card-tires__character-title{
+        justify-content: space-between;
+    }
+    .card-tires__characters-inner{
+        border-bottom: 0;
+    }
+    .card-tires__character-title_dimensions{
+        margin-left: 10px;
+    }
+    .card-tires__character-title_price {
+        margin-left: 70px;
+    }
+    .card-tires__character-title_quantity{
+        margin-right: 10px;
+    }
+    .card-tires__character-btn{
+        display: none;
+    }
+    .card-tires__character-btn_hidden{
+        display: block;
+        margin: 0 auto;
+    }
+    .card-tires__border-bottom {
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0, 0.1);
+        padding-bottom: 15px;
+    }
+}
 
 
 /* product-cards */
@@ -185,7 +250,7 @@
 .product-cards__icons{
     display: none;
     margin-left: 11px;
-    width: 30px;
+    width: 27px;
     height: 24px;
 }
 .product-cards__icons_active{
@@ -277,7 +342,65 @@
     font-weight: 700;
     text-align: right;
 }
-
+.product-cards__switch{
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+}
+.product-cards__switch-wrapp{
+    display: flex;
+    justify-content: center;
+}
+.product-cards__switch-left{
+    display: block;
+    margin-right: 1.5px;
+    width: 43px;
+    height: 26px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+}
+.product-cards__switch-left:active {
+    background-color:  rgba(0,0,0, 0.2);
+}
+.product-cards__switch-elem{
+    display: block;
+    margin: 0 1.5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #ffda44;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product-cards__switch-elem_active{
+    background-color: #ffda44;
+    color: #ffffff;
+}
+.product-cards__switch-elem:active {
+    background-color:  rgba(0,0,0, 0.2);
+}
+.product-cards__switch-right{
+    display: block;
+    margin-left: 1.5px;
+    width: 43px;
+    height: 26px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+}
+.product-cards__switch-right:active {
+    background-color:  rgba(0,0,0, 0.2);
+}
+.product-cards__arrow-active{
+    color: #ffda44;
+}
 
 /* Goods-card */
 .goods-card {
@@ -401,11 +524,107 @@
     font-weight: 600;
     margin-bottom: 17px;
 }
+@media (max-width: 992px){
+    .goods-card__btn{
+        width: 86px;
+    }
+}
+@media (max-width: 767px){
+    .goods-card__title-inner {
+        margin-top: 30px;
+    }
+    .goods-card__img {
+        width: 155px;
+    }
+}
+@media (max-width: 576px){
+    .goods-card__title{
+        font-size: 26px;
+    }
+    .goods-card__price-wrapp {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .goods-card__price-num{
+        margin-top: 8px;
+        font-size: 30px;
+    }
 
+}
 
-
-
-
+/*Options*/
+.options {
+    margin-top: 37px;
+}
+.options__title{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #030305;
+    margin-bottom: 20px;
+}
+.options__title span{
+    color: #ffda44;
+}
+.options__param-wrapper{
+    display: flex;
+}
+.options__param1-wrapp p{
+    color: #030305;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700; 
+}
+.options__param1-wrapp p:last-child{
+    margin-top: 16px;
+}
+.options__param2-wrapp{
+    margin-left: 18px;
+}
+.options__param2-wrapp a{
+    display: block;
+    color: #030305;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+.options__param2-wrapp a:hover{
+    font-weight: 500;
+}
+.options__param2-wrapp a:last-child{
+    margin-top: 16px;
+    text-decoration: underline;
+}
+.options__ul-inner{
+    margin-top: 21px;
+    display: flex;
+}
+.options__ul-title{
+    margin-bottom: 15px;
+    color: #030305;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+.options__ul-wrapp_2{
+    margin-left: 122px;
+} 
+.options__ul li{
+    margin-bottom: 16px;
+}
+.options__link{
+    display: block;
+    color: #030305;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.options__link:hover{
+    font-weight: 500;
+    color: #030305;
+}
 
 
 /* Count */

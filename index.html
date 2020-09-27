@@ -32,7 +32,6 @@
     </section>
     <!--End Transitions-->
 
-
     <!-- Product-cards -->
     <section class="product-cards">
         <div class="container">
@@ -421,36 +420,50 @@
                         <div class="product-cards__presence">Есть в наличии</div>
                     </div>
                 </div>
+                <div class="col-7 offset-5 col-md-4 offset-md-8 col-lg-3 offset-lg-9">
+                    <div class="product-cards__switch">
+                        <div class="product-cards__switch-wrapp">
+                            <button type="button" class="product-cards__switch-left">&#8592;</button>
+                            <button class="product-cards__switch-elem product-cards__switch-elem_active">1</button>
+                            <button class="product-cards__switch-elem">2</button>
+                            <button class="product-cards__switch-elem">3</button>
+                            <button class="product-cards__switch-elem">4</button>
+                            <button class="product-cards__switch-elem">5</button>
+                            <button type="button" class="product-cards__switch-right product-cards__arrow-active">&#8594;</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    <!--End Product-cards-->
+    
     <!--Goods-card-->
     <section class="goods-card">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-5 col-xl-5">
+                <div class="col-12 col-md-5 col-xl-5">
                     <div class="goods-card__box">
                         <img class="goods-card__img" src="img/Goods-card__img.png" alt="img">
                         <div class="goods-card__icons-wrapp">
                             <!-- Active class = display: block-->
-                            <img class="goods-card__icons goods-card__icons_active" src="icons/Snow.png" alt="snow"> 
+                            <img class="goods-card__icons goods-card__icons_active" src="icons/Snow.png" alt="snow">
                             <img class="goods-card__icons" src="icons/Znak.png" alt="znak">
                             <img class="goods-card__icons" src="icons/Sun.png" alt="sun">
-                        </div> 
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-7 col-xl-7">
+                <div class="col-12 col-md-7 col-xl-7">
                     <div class="goods-card__title-inner">
                         <div class="goods-card__title-wrapp">
                             <h2 class="goods-card__title">Impulser b2</h2>
                             <h3 class="goods-card__subtitle">Артикул: 34562</h3>
-                            <div class="goods-card__time">Срок поставки: 1 день</div>    
+                            <div class="goods-card__time">Срок поставки: 1 день</div>
                         </div>
                         <a href="#" class="goods-card__brand-link">
                             <img src="icons/BrandLogo.png" alt="brand" class="goods-card__brand-img">
                         </a>
-                    </div> 
+                    </div>
                     <div class="goods-card__price-wrapp">
                         <div class="goods-card__price-num">1 760 ₽<span class="goods-card__price-span">/шт</span></div>
                         <div class="count goods-card__count">
@@ -478,12 +491,78 @@
                             <p>13</p>
                         </div>
                     </div>
-                </div>               
+                </div>
             </div>
         </div>
-    </div>
+        </div>
     </section>
-
+    <!--End Goods-card-->
+    
+    <!--Options-->
+    <section class="options">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="options__title"><span>Варианты шин</span> на автомобиль</h2>
+                    <div class="options__ul-inner">
+                        <div class="options__ul-wrapp_1">
+                            <div class="options__ul-title">Заводские размеры:</div>
+                            <ul class="options__ul">
+                                <li><a href="#" class="options__link">255/50 R19</a></li>
+                            </ul>
+                        </div>
+                        <div class="options__ul-wrapp_2">
+                            <div class="options__ul-title">Тюннинг замены:</div>
+                            <ul class="options__ul">
+                                <li><a href="#" class="options__link">255/50 R19</a></li>
+                                <li><a href="#" class="options__link">285/45 R19</a></li>
+                                <li><a href="#" class="options__link">275/40 R20</a></li>
+                                <li><a href="#" class="options__link">315/35 R20</a></li>
+                                <li><a href="#" class="options__link">285/35 R21</a></li>
+                                <li><a href="#" class="options__link">325/30 R21</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="options__title"><span>Варианты дисков</span> на автомобиль</h2>
+                    <div class="options__param-wrapper">
+                        <div class="options__param1-wrapp">
+                            <p>Параметры автомобиля:</p>
+                            <p>Болт:</p>
+                        </div>
+                        <div class="options__param2-wrapp">
+                            <a href="#">PCD: 5x120 DIA: 74.1</a>
+                            <a href="#">14*1.25</a>
+                        </div>
+                    </div>
+                    <div class="options__ul-inner">
+                        <div class="options__ul-wrapp_1">
+                            <div class="options__ul-title">Заводские размеры:</div>
+                            <ul class="options__ul">
+                                <li><a href="#" class="options__link">9x19 ET48</a></li>
+                            </ul>
+                        </div>
+                        <div class="options__ul-wrapp_2">
+                            <div class="options__ul-title">Тюннинг замены:</div>
+                            <ul class="options__ul">
+                                <li><a href="#" class="options__link">10x19 ET21</a> </li>
+                                <li><a href="#" class="options__link">10x19 ET53</a></li>
+                                <li><a href="#" class="options__link">9x19 ET48</a></li>
+                                <li><a href="#" class="options__link">9x19 ET37</a></li>
+                                <li><a href="#" class="options__link">11x20 ET37</a></li>
+                                <li><a href="#" class="options__link">10x20 ET40</a></li>
+                                <li><a href="#" class="options__link">10x21 ET40</a></li>
+                                <li><a href="#" class="options__link">11.5x21 ET38</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Options-->
+    
     <!--Card-tires-->
     <section class="card-tires">
         <div class="container">
@@ -506,40 +585,46 @@
                         </div>
                         <div class="card-tires__character-wrapp">
                             <div class="card-tires__character-box">
-                            <div class="card-tires__character-radius">R13</div>
-                            <div class="card-tires__characters-inner">
-                                <div class="card-tires__character-dimensions">
-                                    <div class="card-tires__character-dimensions_radius-descr">175/70 R13 82T</div>
-                                    <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
-                                </div>
-                                <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
-                                <div class="count">
-                                    <button class="count__minus">-</button>
-                                    <div class="count__number-wrapp">
-                                        <input type="number" class="count__number" value="4">
+                                <div class="card-tires__character-radius">R13</div>
+                                <div class="card-tires__characters-inner">
+                                    <div class="card-tires__character-dimensions">
+                                        <div class="card-tires__character-dimensions_radius-descr">175/70 R13 82T</div>
+                                        <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
                                     </div>
-                                    <button class="count__plus">+</button>
+                                    <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                    <div class="count">
+                                        <button class="count__minus">-</button>
+                                        <div class="count__number-wrapp">
+                                            <input type="number" class="count__number" value="4">
+                                        </div>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                    <button class="card-tires__character-btn">В корзину</button>
                                 </div>
-                                <button class="card-tires__character-btn">В корзину</button>
-                            </div>
+                                <div class="card-tires__border-bottom">
+                                    <button class="card-tires__character-btn card-tires__character-btn_hidden">В корзину</button>
+                                </div>
                             </div>
                             <div class="card-tires__character-box">
-                            <div class="card-tires__character-radius">R14</div>
-                            <div class="card-tires__characters-inner">
-                                <div class="card-tires__character-dimensions">
-                                    <div class="card-tires__character-dimensions_radius-descr">175/70 R13 84T</div>
-                                    <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
-                                </div>
-                                <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
-                                <div class="count">
-                                    <button class="count__minus">-</button>
-                                    <div class="count__number-wrapp">
-                                        <input type="number" class="count__number" value="4">
+                                <div class="card-tires__character-radius">R14</div>
+                                <div class="card-tires__characters-inner">
+                                    <div class="card-tires__character-dimensions">
+                                        <div class="card-tires__character-dimensions_radius-descr">175/70 R13 84T</div>
+                                        <div class="card-tires__character-dimensions_articul">Артикул: 34652</div>
                                     </div>
-                                    <button class="count__plus">+</button>
+                                    <div class="card-tires__character-price">2 350 <span style="font-weight: 400;">₽</span></div>
+                                    <div class="count">
+                                        <button class="count__minus">-</button>
+                                        <div class="count__number-wrapp">
+                                            <input type="number" class="count__number" value="4">
+                                        </div>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                    <button class="card-tires__character-btn">В корзину</button>
                                 </div>
-                                <button class="card-tires__character-btn">В корзину</button>
-                            </div>
+                                <div class="card-tires__border-bottom">
+                                    <button class="card-tires__character-btn card-tires__character-btn_hidden">В корзину</button>
+                                </div>
                             </div>
                             <div class="card-tires__character-box">
                                 <div class="card-tires__character-radius">R15</div>
@@ -557,6 +642,9 @@
                                         <button class="count__plus">+</button>
                                     </div>
                                     <button class="card-tires__character-btn">В корзину</button>
+                                </div>
+                                <div class="card-tires__border-bottom">
+                                    <button class="card-tires__character-btn card-tires__character-btn_hidden">В корзину</button>
                                 </div>
                             </div>
                             <div class="card-tires__character-box">
@@ -591,14 +679,18 @@
                                     </div>
                                     <button class="card-tires__character-btn">В корзину</button>
                                 </div>
+                                <div class="card-tires__border-bottom">
+                                    <button class="card-tires__character-btn card-tires__character-btn_hidden">В корзину</button>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <!--End Card-tires-->
 
 </body>
 </html>
